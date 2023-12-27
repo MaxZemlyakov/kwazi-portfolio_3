@@ -1,0 +1,206 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+input::-ms-clear{
+	display: none;
+}
+
+a{
+	color: #fff;
+}
+button::-moz-focus-inner{
+	padding: 0;
+	border: 0;
+}
+/*------------*/
+
+
+
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0E0E2C;
+	color: #fff;
+	overflow: hidden; /*чтобы убрать горизонтальный скроп*/   
+}
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/*//////////////////////////////header///////////////////////////////////*/
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 130px auto;
+	padding: 35px 15px 0px 15px;
+}
+/*////////////////////////////burger//////////////////////////////////////*/
+.burger-menu{
+	width: 25px;
+	height: 25px;
+	display: none; /*не показываем*/
+}
+.burger-button{
+	position: relative;
+	width: 25px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.burger-button::before, .burger-button::after{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #FFBE0B;
+}
+.burger-button::after{
+	bottom: 20%;
+	left: 0;
+}
+
+.burger-button::before{
+	top: 20%;
+	left: 0;
+}
+
+.burger-button span{
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	top: 48%;
+	left: 0;
+	background-color: #FFBE0B;
+}
+
+/*///////////////////////////navigation/////////////////////////////*/
+
+.navigation{
+	display: flex;
+	align-items: center;
+}
+.navigation_list{
+	display: flex;
+	margin-right: 110px;
+}
+/*  .navigation_item{
+	padding-left: 50px; - я обычно так делаю отступы между элементами списка
+*/
+.navigation_item:not(:last-child){
+	margin-right: 50px;
+}
+/*стилизуем ссылочки и добавим им интерактива*/
+.navigation_link{
+	position: relative;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+
+}
+.navigation_link::before{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -50%;
+	left: 10%;
+	background-color: #FFBE0B;
+	z-index: -1;
+	border-radius: 50%;
+	filter: blur(25px);
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+.navigation_link:hover::before{
+	opacity: 1;
+}
+
+/*отрабатываю кнопки*/
+.button{
+	padding: 14px 30px;
+	background-color: #FFBE0B;
+	border: 1px solid #FFBE0B;
+	border-radius: 10px;
+	color: #0E0E2C;
+	font-weight: 700;
+	font-size: 16px;
+	transition: all .2s linear;
+}
+.button:hover{
+	background-color: transparent;
+	color: #FFBE0B;
+	box-shadow: 0 0 20px #FFBE0B;
+	
+}
+/*////////////////////////верстаем секцию, перешел в мейн//////////////////////////*/
+
+.section-subtitle{
+	margin-left: 130px;
+	margin-top: 296px;
+	max-width: 600px;
+}
+.section-pre-title{
+	padding-top: 13px;
+	width: 257px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #3A86FF;
+	background-color: #172656;
+	text-align: center;
+	letter-spacing: 7.5%;
+}
+.section-title{
+	margin-top: 5px;
+	width: 537px;
+	height: 162px;
+	font-weight: 700;
+	font-size: 62px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.section-subscribe{
+	width: 460px;
+	height: 60px;
+	font-size: 16px;
+	color: #868695;
+}
+
