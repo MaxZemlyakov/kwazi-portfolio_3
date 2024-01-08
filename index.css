@@ -61,6 +61,7 @@ body{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+	padding-bottom: 15px;
 }
 /*//////////////////////////////header///////////////////////////////////*/
 .header{
@@ -173,8 +174,8 @@ body{
 /*////////////////////////верстаем секцию, перешел в мейн//////////////////////////*/
 
 .section-subtitle{
-	margin-left: 130px;
-	margin-top: 296px;
+	margin-left: 0px;
+	margin-top: 150px;
 	max-width: 600px;
 }
 .section-pre-title{
@@ -190,7 +191,7 @@ body{
 }
 .section-title{
 	margin-top: 5px;
-	width: 537px;
+	width: 550px;
 	height: 162px;
 	font-weight: 700;
 	font-size: 62px;
@@ -203,4 +204,41 @@ body{
 	font-size: 16px;
 	color: #868695;
 }
+/*поле формы*/
+.input__wrapper{
+	width: 485px;
+	height: 70px;
+	border: 1px solid #626276;
+	border-radius: 18px;
+	
+}
+.input__wrapper__content{
+	margin: 10px 0px auto 10px;
+	
+}
+.form_input{
+	background-color: #0E0E2C;
+	color: #fff;
+	
+}
+.input__wrapper__label{
+	margin-top: 9px;
+}
+#button_form{
+	margin-left: 140px;
+}
+.checkbox__block{
+	max-width: 485px;
+	display: flex;
+}
+.checkbox__p{
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 35px ;
+}
+.checkbox{
+	margin-top: 10px;
+	background-color: #172656;
+}
+/*/////////////////////////////////////верстаю правый блок с картинкой/////////////////////*/
 
