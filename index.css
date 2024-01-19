@@ -403,16 +403,18 @@ position: absolute;
 /*///////////////////////////вторая часть секции//////////////////////////////////////////////////*/
 .main_content_inside{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	
 }
 .main_content_second_img{
 	margin-top: 150px;
-	background: url("./pictures/illustration/phone-foto.png") 50%/cover no-repeat;
-	width: 725px;
-	height: 820px;
+
+
 }
 .main_content_second_text{
 	margin-top: 200px;
+	padding-left: 0px;
+	width: 600px;
 }
 .main_content_second_text_inside{
 	width: 550px;
@@ -432,9 +434,7 @@ position: absolute;
 }
 .table_one{
 	align-items: center;
-
 	border: 2px solid #626276;
-	;
 	border-top: none;
 	border-bottom: none;
 	border-left: none;
@@ -460,3 +460,78 @@ table{
 	font-size: 38px;
 	font-weight: 700;
 }
+/*///////////////////////////третья часть секции//////////////////////////////////////////////////*/
+.main_content_third{
+	display: flex;
+	justify-content: space-between;
+	width: 1300px;
+}
+
+/*///////////////////////////левая  часть секции//////////////////////////////////////////////////*/
+.main_content_third{
+	width: 600px;
+}
+#main_content_third_content{
+	width: 600px;
+	height: 400px;
+}
+#main_content_third_content_p{
+
+}
+#main_content_third_content_h1{
+
+}
+#main_content_third_content_p2{
+	margin-top: 30px;
+}
+/*//////////////////////////////правая часть секции/////////////////////////*/
+.main_content_third_right{
+	margin-top: 150px;
+	margin-left: 50px;
+}
+.main_content_third_right h3{
+	font-size: 20px;
+	font-weight: 700;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.main_content_third_right p{
+	font-size: 14px;
+	font-weight: 400;
+	color: #868695;
+}
+
+.main_content_third_right_top{
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_content_third_right_bott{
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+.main_content_third_right_top_left,.main_content_third_right_top_right,.main_content_third_right_bott_left,.main_content_third_right_bott_right{
+	width: 268px;
+	height: 240px;
+}
+.main_content_third_right_top_left:hover{
+	background-color: #1A1A3D;
+}
+.main_content_third_right_top_right:hover{
+	background-color: #1A1A3D;
+}
+.main_content_third_right_bott_left:hover{
+	background-color: #1A1A3D;
+}
+.main_content_third_right_bott_right:hover{
+	background-color: #1A1A3D;
+}
+
+
+
+
+
+
