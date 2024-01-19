@@ -400,3 +400,63 @@ position: absolute;
 	display: flex;
 	justify-content: space-between;
 }
+/*///////////////////////////вторая часть секции//////////////////////////////////////////////////*/
+.main_content_inside{
+	display: flex;
+	justify-content: space-between;
+}
+.main_content_second_img{
+	margin-top: 150px;
+	background: url("./pictures/illustration/phone-foto.png") 50%/cover no-repeat;
+	width: 725px;
+	height: 820px;
+}
+.main_content_second_text{
+	margin-top: 200px;
+}
+.main_content_second_text_inside{
+	width: 550px;
+	height: 250px;
+}
+#_second_p{
+
+}
+#_second_h1{
+	width: 533px;
+	height: 250px;
+}
+.main_content_second_text_table{
+	margin-top: 100px;
+	width: 505px;
+	height: 107px;
+}
+.table_one{
+	align-items: center;
+
+	border: 2px solid #626276;
+	;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+}
+table{
+	border-collapse: collapse;
+	align-content: center;
+}
+#table_one_right{
+	border-right: none;
+	padding-left: 25px;
+}
+#table_one_left{
+	padding-right: 15px;
+}
+.table_one_p{
+	color: #FFBE0B;
+	font-size: 38px;
+	font-weight: 700;
+}
+.table_one_p2{
+	color: #FB5607;
+	font-size: 38px;
+	font-weight: 700;
+}
