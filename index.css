@@ -529,9 +529,70 @@ table{
 .main_content_third_right_bott_right:hover{
 	background-color: #1A1A3D;
 }
+/*////////////////////////////////////////четвертая часть секции/////////////////////////////////////////////////////////*/
+.main_content_four_inside{
+	display: flex;
+	justify-content: space-between;
+}
+/*//////////////////правая часть/////////////////////////*/
+.main_content_four_inside_text{
+	width: 533px;
+}
+.main_content_four_inside_text h3{
+	font-size: 20px;
+	font-weight: 700;
+	margin: 15px;
+}
+.main_content_four_inside_text p{
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 15px;
+	color: #868695;
+}
+.main_content_four_inside_text_colomn{
+	margin-top: 50px;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+}
+.main_content_four_inside_text_colomn_img{
+	margin-top: 13px;
+}
+#_third_p{
+	margin-left: 0px;
 
+}
+/*////////////////////////левая часть//////////////////////////////////////*/
 
+.total_sales{
+	margin-top: 500px;
+	width: 210px;
+	height: 240px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: black;
+	position: absolute;
+}
+.main_content_four_inside_img_inside{
+	padding-left: 30px;
+}
+.total_sales_h1{
+	margin-top: 75px;
+	margin-left: 75px;
+	color: #3A86FF;
+	font-size: 45px;
+	font-weight: 700;
+	position: absolute;
+}
 
-
-
-
+.total_sales_h3{
+	margin-top: 20px;
+	margin-left: 30px;
+	font-size: 30px;
+	font-weight: 400;
+	position: absolute;
+}
+.total_sales_img{
+	margin-top: 25px;
+	margin-left: 30px;
+}
