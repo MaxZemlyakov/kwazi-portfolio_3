@@ -212,6 +212,7 @@ body{
 	height: 60px;
 	font-size: 16px;
 	color: #868695;
+	line-height: 28px;
 }
 /*поле формы*/
 .input__wrapper{
@@ -500,6 +501,7 @@ table{
 	font-size: 14px;
 	font-weight: 400;
 	color: #868695;
+	line-height: 28px;
 }
 
 .main_content_third_right_top{
@@ -595,4 +597,48 @@ table{
 .total_sales_img{
 	margin-top: 25px;
 	margin-left: 30px;
+}
+/*////////////////////////////////////////пятая часть секции/////////////////////////////////////////////////////////*/
+.main_content_five{
+	display: flex;
+	justify-content: space-between;
+}
+
+/*////////////////////////левая часть//////////////////////////////////////*/
+.main_content_five_text{
+	margin-top: 150px;
+	width: 700px;
+	height: 500px;
+}
+#main_content_five_text_p2{
+ width: 465px;
+ height: 175px;
+ line-height: 28px;
+}
+#main_content_five_text_h1{
+	font-size: 48px;
+	height: 120px;
+}
+#main_content_five_text_span{
+	display: inline;
+}
+
+/*//////////////////правая часть/////////////////////////*/
+
+
+/*////////////////////////////////////////шестая часть секции/////////////////////////////////////////////////////////*/
+.main_content_six_inside{
+	width: 550px;
+	height: 250px;
+	margin-left: 450px;
+	margin-top: 80px;
+
+}
+#main_content_six_text_h1{
+	font-size: 48px;
+	height: 70px;
+	margin-left: 20px;
+}
+#main_content_six_text_p{
+	margin-left: 20px;
 }
