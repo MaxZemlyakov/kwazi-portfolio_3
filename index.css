@@ -651,19 +651,28 @@ table{
 	justify-content: space-between;
 	margin-bottom: 80px;
 }
-.footer_content_media{
+.footer_content_media_ul{
 	width: 320px;
 	padding-left: 0px;
+	margin-top: 10px;
 }
-.footer_content_media_inside{
-	margin-left: 40px;
-}
+
 #footer_content_media_inside_link:hover{
 	color: #fff;
-
 }
+#footer_content_media_inside_link{
+	color: #868695;
+	width: 30px;
+	height: 30px;
+	margin-left: 25px;
+	padding-top: 25px;
+}
+
 #footer-navigation_inside{
 	margin-left: 150px;
 	margin-right: 0px;
 	padding-left: 100px;
+}
+.footer_content_media_ul{
+	display: flex;
 }
