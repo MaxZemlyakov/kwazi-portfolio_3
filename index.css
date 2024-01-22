@@ -469,8 +469,11 @@ table{
 }
 
 /*///////////////////////////левая  часть секции//////////////////////////////////////////////////*/
-.main_content_third{
+.main_content_fri{
 	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 200px;
 }
 #main_content_third_content{
 	width: 600px;
@@ -641,4 +644,26 @@ table{
 }
 #main_content_six_text_p{
 	margin-left: 20px;
+}
+/*/////////////////////////футер///////////////////////////////////////////////*/
+.footer_content{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+.footer_content_media{
+	width: 320px;
+	padding-left: 0px;
+}
+.footer_content_media_inside{
+	margin-left: 40px;
+}
+#footer_content_media_inside_link:hover{
+	color: #fff;
+
+}
+#footer-navigation_inside{
+	margin-left: 150px;
+	margin-right: 0px;
+	padding-left: 100px;
 }
