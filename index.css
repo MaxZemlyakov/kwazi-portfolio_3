@@ -164,6 +164,7 @@ body{
 	font-weight: 700;
 	font-size: 16px;
 	transition: all .2s linear;
+
 }
 .button:hover{
 	background-color: transparent;
@@ -176,10 +177,10 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 100px;
+	flex-wrap: wrap;
 }
 .section-pre-subtitle{
-	position: relative;
-	width: 55%;
+
 }
 
 .section-subtitle{
@@ -225,6 +226,7 @@ body{
 }
 .input__wrapper__content{
 	margin: 10px 0px auto 10px;
+	align-items: baseline;
 
 	
 }
@@ -381,8 +383,7 @@ position: absolute;
 .section-img-container{
 
 	background: url("./pictures/illustration/mean-foto.png") 1%/cover no-repeat ;
-	height: 825px;
-	width: 920px;
+
 
 }
 /*добавляю маеленький элипс из света*/
@@ -404,18 +405,23 @@ position: absolute;
 /*///////////////////////////вторая часть секции//////////////////////////////////////////////////*/
 .main_content_inside{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+
 	
 }
 .main_content_second_img{
 	margin-top: 150px;
-
-
+}
+.main_content_second_img_inside{
+	width: 100%;
 }
 .main_content_second_text{
 	margin-top: 200px;
 	padding-left: 0px;
 	width: 600px;
+	
 }
 .main_content_second_text_inside{
 	width: 550px;
@@ -462,22 +468,18 @@ table{
 	font-weight: 700;
 }
 /*///////////////////////////третья часть секции//////////////////////////////////////////////////*/
-.main_content_third{
+.main_content_fri{
 	display: flex;
 	justify-content: space-between;
 	width: 1300px;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 /*///////////////////////////левая  часть секции//////////////////////////////////////////////////*/
-.main_content_fri{
-	width: 600px;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 200px;
-}
+
 #main_content_third_content{
-	width: 600px;
-	height: 400px;
+
 }
 #main_content_third_content_p{
 
@@ -486,12 +488,14 @@ table{
 
 }
 #main_content_third_content_p2{
-	margin-top: 30px;
+	
 }
 /*//////////////////////////////правая часть секции/////////////////////////*/
 .main_content_third_right{
 	margin-top: 150px;
 	margin-left: 50px;
+
+
 }
 .main_content_third_right h3{
 	font-size: 20px;
@@ -508,13 +512,13 @@ table{
 }
 
 .main_content_third_right_top{
-	width: 600px;
+
 	display: flex;
 	justify-content: space-between;
 }
 
 .main_content_third_right_bott{
-	width: 600px;
+	
 	display: flex;
 	justify-content: space-between;
 }
@@ -538,6 +542,8 @@ table{
 .main_content_four_inside{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 }
 /*//////////////////правая часть/////////////////////////*/
 .main_content_four_inside_text{
@@ -570,13 +576,13 @@ table{
 /*////////////////////////левая часть//////////////////////////////////////*/
 
 .total_sales{
-	margin-top: 500px;
+	top: -70px;
 	width: 210px;
 	height: 240px;
 	border-radius: 5px;
 	background-color: #fff;
 	color: black;
-	position: absolute;
+	position: relative;
 }
 .main_content_four_inside_img_inside{
 	padding-left: 30px;
@@ -605,13 +611,15 @@ table{
 .main_content_five{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 /*////////////////////////левая часть//////////////////////////////////////*/
 .main_content_five_text{
 	margin-top: 150px;
-	width: 700px;
-	height: 500px;
+	
+
 }
 #main_content_five_text_p2{
  width: 465px;
@@ -630,11 +638,17 @@ table{
 
 
 /*////////////////////////////////////////шестая часть секции/////////////////////////////////////////////////////////*/
+.main_content_six{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
 .main_content_six_inside{
+
 	width: 550px;
-	height: 250px;
-	margin-left: 450px;
-	margin-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	
 
 }
 #main_content_six_text_h1{
