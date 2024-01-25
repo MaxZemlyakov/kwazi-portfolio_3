@@ -70,70 +70,112 @@ body{
 	align-items: center;
 	width: 100%;
 	max-width: 1200px;
+	min-height: 100px;
 	margin: 0 auto 130px auto;
-	padding: 35px 15px 0px 15px;
+
+}
+.open{
+    display: flex !important;
+}
+/*//////////////////////////////nav-new/////////////////////////////////////////////////////////*/
+.nav{
+    display: flex;
+    width: 80%;
+    padding: 0 40px;
+	
+}
+.nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 /*////////////////////////////burger//////////////////////////////////////*/
-.burger-menu{
-	width: 25px;
-	height: 25px;
-	display: none; /*не показываем*/
-}
-.burger-button{
-	position: relative;
-	width: 25px;
-	height: 30px;
-	cursor: pointer;
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end; /* чтобы средняя линия начаналась справа ибо она будет 80%*/
+    width: 30px;
+    height: 18px;
 }
 
-.burger-button::before, .burger-button::after{
-	content: "";
-	position: absolute;
-	width: 25px;
-	height: 2px;
-	background-color: #FFBE0B;
-}
-.burger-button::after{
-	bottom: 20%;
-	left: 0;
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
 }
 
-.burger-button::before{
-	top: 20%;
-	left: 0;
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
 }
 
-.burger-button span{
-	position: absolute;
-	width: 25px;
-	height: 2px;
-	top: 48%;
-	left: 0;
-	background-color: #FFBE0B;
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span { transform: scale(0) } /*скайл 0 говорит что она уйдет*/
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
 }
 
-/*///////////////////////////navigation/////////////////////////////*/
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
 
-.navigation{
-	display: flex;
-	align-items: center;
+
+/* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
+@media (max-width: 900px) {
+
+    .burger { display: flex }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed; /* растянем на весь дисплей*/
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: black;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        row-gap: 30px; 
+    }
+	#navigation_button_item{
+		background-color: rgba(255, 0, 0, 0);
+		color: #fff;
+	}
 }
-.navigation_list{
-	display: flex;
-	margin-right: 110px;
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
 }
-/*  .navigation_item{
-	padding-left: 50px; - я обычно так делаю отступы между элементами списка
-*/
-.navigation_item:not(:last-child){
-	margin-right: 50px;
-}
+
+
 /*стилизуем ссылочки и добавим им интерактива*/
 .navigation_link{
 	position: relative;
 	font-size: 16px;
 	color: #fff;
 	font-weight: 400;
+
 
 }
 .navigation_link::before{
@@ -154,6 +196,7 @@ body{
 	opacity: 1;
 }
 
+ 
 /*отрабатываю кнопки*/
 .button{
 	padding: 14px 30px;
@@ -471,7 +514,7 @@ table{
 .main_content_fri{
 	display: flex;
 	justify-content: space-between;
-	width: 1300px;
+	max-width: 1300px;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -488,12 +531,13 @@ table{
 
 }
 #main_content_third_content_p2{
-	
+	margin-top: 5%;
 }
 /*//////////////////////////////правая часть секции/////////////////////////*/
 .main_content_third_right{
 	margin-top: 150px;
 	margin-left: 50px;
+	
 
 
 }

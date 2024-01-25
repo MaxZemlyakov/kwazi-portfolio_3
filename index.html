@@ -11,37 +11,36 @@
 <body>
     <div class="container">
         <header class="header">
-            <a href="" class="header_logo logo">
-                <img src="./pictures/icons/logo.png" alt="shopiy" width="125px" height="40px">
-            </a>
-            <div class="burger-menu">
-                <div class="burger-button">
-                    <span>
-    
-                    </span>
-                </div>
+            <div class="logo">
+                <a href="" class="header_logo logo">
+                    <img src="./pictures/icons/logo.png" alt="shopiy" width="125px" height="40px">
+                </a>
             </div>
-            <nav class="header-navigation navigation">
-                <ul class="header-navigation_list navigation_list">
-                    <li class="header-navigation_item navigation_item">
-                        <a href="#" class="header-navigation_link navigation_link">About</a>
+            <nav class="nav">
+                <ul>
+                    <li class="navigation_item" >
+                        <a href="#" class="navigation_link">About</a>
                     </li>
-                    <li class="header-navigation_item navigation_item">
-                        <a href="#" class="header-navigation_link navigation_link">Product</a>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">Product</a>
                     </li>
-                    <li class="header-navigation_item navigation_item">
-                        <a href="#" class="header-navigation_link navigation_link">Service</a>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">Service</a>
                     </li>
-                    <li class="header-navigation_item navigation_item">
-                        <a href="#" class="header-navigation_link navigation_link">Contact</a>
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">Contact</a>
+                    </li>
+                    <li>
+                        <button class="user_sign-button button" id="navigation_button_item">Sign in</button>
+                    </li>
+                    <li>
+                        <button class="user_free-button button" id="navigation_button_item">Try Free</button>
                     </li>
                 </ul>
-                <div class="header-user">
-                    <button class="user_sign-button button">Sign in</button>
-                    <button class="user_free-button button">Try Free</button>
-                </div>
             </nav>
-    
+            <div class="burger">
+                <span></span>
+            </div>
         </header>
         <main class="main">
             <section class="section">
@@ -260,6 +259,11 @@
             </div>
         </footer>
     </div>
-
+<script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+</script>
 </body>
 </html>
