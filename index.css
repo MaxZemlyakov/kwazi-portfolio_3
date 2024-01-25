@@ -90,6 +90,9 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.navigation_item{
+	padding-top: 3%;
+}
 /*////////////////////////////burger//////////////////////////////////////*/
 .burger{
     display: none;
