@@ -55,6 +55,7 @@ body{
     background-color: #0E0E2C;
 	color: #fff;
 	 /* overflow: hidden; чтобы убрать горизонтальный скроп*/   
+
 }
 .container{
 	width: 100%;
@@ -63,16 +64,24 @@ body{
 	padding: 0 15px;
 	padding-bottom: 15px;
 }
+
+
 /*//////////////////////////////header///////////////////////////////////*/
 .header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1350px;
 	min-height: 100px;
 	margin: 0 auto 130px auto;
+	flex-grow: 1;
 
+}
+@media (max-width: 900px){
+	.header{
+		margin-bottom: 0px;
+	}
 }
 .open{
     display: flex !important;
@@ -224,16 +233,20 @@ body{
 	justify-content: space-between;
 	margin-bottom: 100px;
 	flex-wrap: wrap;
+	align-items: baseline;
 }
 .section-pre-subtitle{
 
 }
 
+
 .section-subtitle{
 	margin-left: 0px;
-	margin-top: 150px;
+	
 	max-width: 600px;
 }
+
+
 .section-pre-title{
 	padding-top: 13px;
 	width: 257px;
@@ -431,6 +444,7 @@ position: absolute;
 	background: url("./pictures/illustration/mean-foto.png") 1%/cover no-repeat ;
 
 
+
 }
 /*добавляю маеленький элипс из света*/
 .elipse{
@@ -458,10 +472,11 @@ position: absolute;
 	
 }
 .main_content_second_img{
-	margin-top: 150px;
+	
 }
 .main_content_second_img_inside{
 	width: 100%;
+	max-width: 613px;
 }
 .main_content_second_text{
 	margin-top: 200px;
@@ -686,9 +701,10 @@ table{
 
 /*////////////////////////////////////////шестая часть секции/////////////////////////////////////////////////////////*/
 .main_content_six{
-	margin-top: 100px;
+	margin-top: 100px auto;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .main_content_six_inside{
 
@@ -707,6 +723,9 @@ table{
 	margin-left: 20px;
 }
 /*/////////////////////////футер///////////////////////////////////////////////*/
+.footer{
+	margin: 0 auto;
+}
 .footer_content{
 	display: flex;
 	justify-content: space-between;
